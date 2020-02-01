@@ -9,7 +9,7 @@
          },
      "browser_action": {
         "default_icon": "ducking duck.png",
-        "default_popup": "popup.html",
+        "default_popup": "main.html",
         "default_title": "Ducking"
     },
     "background": {

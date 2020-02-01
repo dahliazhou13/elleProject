@@ -1,6 +1,6 @@
 body{
    width: 300px;
-   height: 300px;
+   height: 500px;
  
 }
 
@@ -9,8 +9,10 @@ body{
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   position: fixed;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
+  margin: auto;
+  display:flex;
 }
 
 /* Style the links inside the navigation bar */
@@ -19,14 +21,13 @@ body{
   display: block;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 5px 10px;  
+  border-radius: 20px;
 }
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  background-color: #aaaaa9;
+  background-color: #ebebeb;
   color: black;
 }
 
@@ -35,4 +36,14 @@ body{
   background-color: #fdf117;
   color: black;
 }
- 
+
+/* nav bar stuff */
+.iconButton {
+  width: 50px;
+  height: 50px;
+}
+.innerBox {
+  margin:auto;
+  display: inline-block;
+  height:min-content;
+}
