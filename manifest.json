@@ -16,6 +16,9 @@
         "scripts": ["backgroundData.js"],
         "persistent": false
       },
+    "web_accessible_resources":[
+      "./table_1.json"
+    ],
     "permissions": [
         "tabs"
       ]
