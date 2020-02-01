@@ -64,3 +64,4 @@ const url1 = chrome.runtime.getURL("./table_1.json");
 fetch(url1)
     .then((response)=>response.json())
     .then((json)=>(file = json));
+
