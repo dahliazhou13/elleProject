@@ -1,0 +1,22 @@
+{    "name": "Ducking",   
+     "version": "1.0",    
+     "description": "An ex...",    
+     "manifest_version": 2,
+     "icons":{
+        "16":"ducking.png",
+        "48":"ducking.png",
+        "128": "ducking.png"
+         },
+     "browser_action": {
+        "default_icon": "ducking duck.png",
+        "default_popup": "popup.html",
+        "default_title": "Ducking"
+    },
+    "background": {
+        "scripts": ["backgroundData.js"],
+        "persistent": false
+      },
+    "permissions": [
+        "tabs"
+      ]
+}
