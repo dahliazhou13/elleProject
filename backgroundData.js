@@ -17,6 +17,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
       if (origin.includes("www.")) {
         var i = 12;
       }
+      else if(origin.includes("www2.")){
+          var i = 13;
+      }
       for (i; i < origin.length; i++) {
         if (origin.charAt(i) == ".") {
           break;
