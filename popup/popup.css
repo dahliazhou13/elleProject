@@ -5,7 +5,7 @@ body {
   font-size: large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-bottom: 100%;
+  padding-bottom: 80%;
 }
 
 h1 {
@@ -50,6 +50,7 @@ table {
   margin: auto;
   display: flex;
   border-radius: 20px;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -58,8 +59,10 @@ table {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* Change the color of links on hover */
