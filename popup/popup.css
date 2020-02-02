@@ -13,6 +13,14 @@ h1 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+sup{
+  font-size: smaller;
+}
+
+.logo{
+  width: 100px;
+  margin: auto;
+}
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
