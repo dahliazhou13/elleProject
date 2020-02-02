@@ -3,4 +3,5 @@ window.onload = function() {
     var comp = web.gotCompany;
     var stat = web.gotStatus;
     var betterComp = web.gotBetter;
+    document.getElementById("company").innerHTML=comp;
 }
