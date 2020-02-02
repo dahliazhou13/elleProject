@@ -20,6 +20,13 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
       else if(origin.includes("www2.")){
           var i = 13;
       }
+      else if(!origin.includes("http://")){
+          i=1;
+          while(!(origin.charAt(i)=="/"&&origin.charAt(i-1))){
+              i++;
+          }
+          i=i+2;
+      }
       for (i; i < origin.length; i++) {
         if (origin.charAt(i) == ".") {
           break;
