@@ -43,7 +43,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
 
       if (found != null) {
         footprint = found["COL 12"];
-        if (footprint <= 52559) {
+        if (footprint <= 10559) {
           status = "Excellent";
         } else if (footprint <= 643864) {
           status = "Moderate";
