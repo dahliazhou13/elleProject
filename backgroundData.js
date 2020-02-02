@@ -44,11 +44,11 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
       if (found != null) {
         footprint = found["COL 12"];
         if (footprint <= 52559) {
-          status = "Green";
+          status = "Excellent";
         } else if (footprint <= 643864) {
-          status = "Yellow";
+          status = "Moderate";
         } else {
-          status = "Red";
+          status = "Poor";
         }
         gotStatus = status;
         const better = file.find(isBetter(footprint));
