@@ -2,6 +2,7 @@ var file;
 var gotCompany;
 var gotBetter;
 var gotstatus;
+var betterStatus;
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     if (typeof tabs[0] !== "undefined") {
@@ -53,6 +54,13 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
         gotStatus = status;
         const better = file.find(isBetter(footprint));
         betterCompany = better["COL 1"];
+        if (better["COL 12"] <= 10559) {
+            betterStatus = "Excellent";
+          } else if (footprint <= 643864) {
+            betterStatus = "Moderate";
+          } else {
+            betterStatus = "Poor";
+          }
         gotBetter = betterCompany;
       }
     }
