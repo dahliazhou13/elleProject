@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color:#f7f7f7;
   width: 300px;
   height: 500px;
   font-size: large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-bottom: 80%;
+  padding-bottom: 100%;
 }
 
 h1 {
@@ -33,6 +33,7 @@ sup {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  padding-bottom: 10px;
 }
 
 table {
@@ -59,7 +60,6 @@ table {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 5px 15px;
   border-radius: 20px;
   padding-left: 25px;
   padding-right: 25px;
@@ -67,7 +67,7 @@ table {
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   color: black;
 }
 
