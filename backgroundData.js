@@ -1,4 +1,7 @@
 var file;
+var gotCompany;
+var gotBetter;
+var gotstatus;
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     if (typeof tabs[0] !== "undefined") {
@@ -21,11 +24,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
         companyName = companyName.concat(origin.charAt(i));
       }
 
-      if(companyName != null){
-        document.getElementById('company').innerHTML = companyName;
-      }
       
       console.log(companyName);
+      gotCompany = companyName;
       console.log(file);
       function isCompany(companyName) {
         return function(object) {
@@ -49,14 +50,18 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tabs) {
         } else {
           status = "Red";
         }
+        gotStatus = status;
         const better = file.find(isBetter(footprint));
         betterCompany = better["COL 1"];
+        gotBetter = betterCompany;
       }
     }
   });
 });
-
 const url1 = chrome.runtime.getURL("./table_1.json");
 fetch(url1)
   .then(response => response.json())
   .then(json => (file = json));
+
+
+
